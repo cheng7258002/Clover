@@ -1944,6 +1944,11 @@ SetupDataForOSX (BOOLEAN Hibernate);
 EFI_STATUS
 SetPrivateVarProto ();
 
+EFI_STATUS
+InstallAppleProtocols (
+  VOID
+  );
+
 VOID
 SetDevices (
   LOADER_ENTRY *Entry

@@ -2214,6 +2214,7 @@ RefitMain (IN EFI_HANDLE           ImageHandle,
   //DBG("ScanSPD() end\n");
 
   SetPrivateVarProto();
+  InstallAppleProtocols ();
 //  GetDefaultSettings();
   GetAcpiTablesList();
 

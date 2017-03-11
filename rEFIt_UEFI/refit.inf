@@ -130,6 +130,8 @@
   Platform/Net.c
 
   Platform/AppleProtocols.c
+  Platform/DeviceProperty.c
+  Platform/HdaInjector.c
 
   # Include/Driver/AppleGraphicsConfiguration.h
   ../Protocols/AppleGraphicsConfiguration/AppleGraphicsConfiguration.c
@@ -270,6 +272,8 @@
   gMsgLogProtocolGuid
   gEfiPlatformDriverOverrideProtocolGuid
   gEmuVariableControlProtocolGuid
+
+  gEfiDevicePathPropertyDatabaseProtocolGuid
 
   # Include/Driver/AppleGraphicsConfiguration.h
   gAppleGraphicsConfigurationProtocolGuid

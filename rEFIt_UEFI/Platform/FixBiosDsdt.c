@@ -3874,7 +3874,7 @@ UINT32 FIXUSB (UINT8 *dsdt, UINT32 len)
     Return (Local0)
   }
 */
-  
+
   aml_add_byte_buffer(pack1, dataBuiltin, sizeof(dataBuiltin));
   aml_add_local0(met2);
   aml_add_buffer(met1, dtgp_1, sizeof(dtgp_1));
@@ -5195,7 +5195,7 @@ VOID FixBiosDsdt (UINT8* temp, EFI_ACPI_2_0_FIXED_ACPI_DESCRIPTION_TABLE* fadt, 
 
         }
       } else {
-        DBG(" disabled\n"); 
+        DBG(" disabled\n");
       }
     }
   }
@@ -5384,7 +5384,7 @@ VOID FixBiosDsdt (UINT8* temp, EFI_ACPI_2_0_FIXED_ACPI_DESCRIPTION_TABLE* fadt, 
   }
     // other compiler warning fix _T_X,  MUTE .... USB _PRW value form 0x04 => 0x01
 //     DsdtLen = FIXOTHER(temp, DsdtLen);
-  
+
   if ((gSettings.FixDsdt & FIX_WARNING) || (gSettings.FixDsdt & FIX_DARWIN)) {
     if (!FindMethod(temp, DsdtLen, "GET9") &&
         !FindMethod(temp, DsdtLen, "STR9") &&
